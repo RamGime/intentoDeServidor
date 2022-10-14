@@ -52,4 +52,5 @@ ctrl.buscarUsuario = async(req, res)=>{
 } 
 
 
+
 module.exports = ctrl
