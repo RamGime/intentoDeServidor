@@ -45,6 +45,11 @@ ctrl.login = async(req, res)=>{
 
 }
 
+ctrl.buscarUsuario = async(req, res)=>{
+   
+    const buscar = await Usuario.findById(req.params.id)
+    res.json({buscar, msg: "UsuarioEncontrado"})
+} 
 
 
 module.exports = ctrl
