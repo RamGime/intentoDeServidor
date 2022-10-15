@@ -17,12 +17,4 @@
     "mongoose": "^6.6.5",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
-  },
-
-  },
-  "bugs": {
-    "url": "https://github.com/santidq/TLPII_primer_parcial/issues"
-  },
-  "homepage": "https://github.com/santidq/TLPII_primer_parcial#readme",
-  "description": ""
-}
+  }
