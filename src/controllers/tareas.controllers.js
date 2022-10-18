@@ -40,6 +40,10 @@ ctrl.putTarea = async(req, res)=>{
 
 ctrl.deleteTarea = async(req, res)=>{
     const id = req.params.id
+    const validacion = await Tareas.findOne({userID:req.user._id, _id:id})
+    if(!validacion){
+        return res.json("No está autorizado");
+    }
 
     const eliminarTarea = await Tareas.findByIdAndUpdate(id, {isActive: false})
 
